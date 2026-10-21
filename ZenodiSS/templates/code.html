@@ -1,8 +1,0 @@
-{% extends "base.html" %}{% block title %}Scripts - Jeffy's Beckdoor{% endblock %}{% block content %}
-<section class="heading"><h1><span>Script</span> Hub</h1><p>Click a script to load its code into the Executor.</p></section>
-<div class="toolbar"><input id="search" placeholder="Search scripts..."><div><button class="chip active" data-cat="all">All</button><button class="chip" data-cat="Utility">Utility</button><button class="chip" data-cat="UI">UI</button><button class="chip" data-cat="Movement">Movement</button><button class="chip" data-cat="Visual">Visual</button></div></div>
-<div class="scripts">
-  <article class="script" data-name="welcome script" data-cat="Utility"><div class="tag">Utility</div><h3>Welcome Script</h3><p>Simple example script.</p><div><button class="load" data-code='print("Hello from Jeffy")' data-name="Welcome Script">Load to Executor</button><button data-copy='print("Hello from Jeffy")'>Copy</button></div></article>
-  <article class="script" data-name="player info" data-cat="Utility"><div class="tag">Utility</div><h3>Player Info</h3><p>Example player information code.</p><div><button class="load" data-code='local Players = game:GetService("Players")\nlocal player = Players.LocalPlayer\nprint(player and player.Name or "No local player")' data-name="Player Info">Load to Executor</button><button data-copy='local Players = game:GetService("Players")\nlocal player = Players.LocalPlayer\nprint(player and player.Name or "No local player")'>Copy</button></div></article>
-</div>
-{% endblock %}
